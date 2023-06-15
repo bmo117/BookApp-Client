@@ -20,9 +20,11 @@ function bookCatalogCard() {
   const [wtr, setWtr] = useState([]);
   const [updateReadBook, setUpdateReadBook] = useState(false);
   useEffect(() => {
-    axios.get("http://localhost:3001/api/admin/books/").then((res) => {
-      setBookCatalog(res.data);
-    });
+    axios
+      .get("https://bookapp-api-production.up.railway.app/api/admin/books/")
+      .then((res) => {
+        setBookCatalog(res.data);
+      });
     getFavorites();
     setBookStatus();
   }, []);
@@ -38,17 +40,23 @@ function bookCatalogCard() {
   //
   async function getFavorites() {
     await axios
-      .get("http://localhost:3001/api/v1/users/favoritesIDs/" + id)
+      .get(
+        "https://bookapp-api-production.up.railway.app/api/v1/users/favoritesIDs/" +
+          id
+      )
       .then((res) => {
         setMyFavorites(res.data);
       });
   }
 
   async function addFavoritesToUser(userID, bookID) {
-    await axios.post("http://localhost:3001/api/v1/users/favorites", {
-      userID,
-      bookID,
-    });
+    await axios.post(
+      "https://bookapp-api-production.up.railway.app/api/v1/users/favorites",
+      {
+        userID,
+        bookID,
+      }
+    );
 
     console.log("BookID: ", bookID, "UserID: ", userID);
   }
@@ -108,7 +116,8 @@ function bookCatalogCard() {
               <img
                 className="imgBCCard"
                 src={
-                  "http://localhost:3001/public/" + element.book.dataImage.name
+                  "https://bookapp-api-production.up.railway.app/public/" +
+                  element.book.dataImage.name
                 }
                 alt=""
               />

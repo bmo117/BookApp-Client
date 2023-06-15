@@ -26,17 +26,23 @@ function BookFavorites() {
 
   async function getDataFavorites() {
     await axios
-      .get("http://localhost:3001/api/v1/users/favorites/" + id)
+      .get(
+        "https://bookapp-api-production.up.railway.app/api/v1/users/favorites/" +
+          id
+      )
       .then((res) => {
         setBookFavorites(res.data);
       });
   }
 
   async function addFavoritesToUser(userID, bookID) {
-    await axios.post("http://localhost:3001/api/v1/users/favorites", {
-      userID,
-      bookID,
-    });
+    await axios.post(
+      "https://bookapp-api-production.up.railway.app/api/v1/users/favorites",
+      {
+        userID,
+        bookID,
+      }
+    );
 
     console.log("BookID: ", bookID, "UserID: ", userID);
   }
@@ -93,7 +99,8 @@ function BookFavorites() {
               <img
                 className="imgBCCard"
                 src={
-                  "http://localhost:3001/public/" + element.book.dataImage.name
+                  "https://bookapp-api-production.up.railway.app/public/" +
+                  element.book.dataImage.name
                 }
                 alt=""
               />
