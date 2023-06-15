@@ -21,7 +21,7 @@ function Index() {
 
   async function getData() {
     const data = await axios
-      .get("https://bookapp-api-production.up.railway.app/api/admin/books/5")
+      .get("https://bookapp-api-production.up.railway.app/api/admin/books/20")
       .then((res) => {
         setBookData(res.data);
 
