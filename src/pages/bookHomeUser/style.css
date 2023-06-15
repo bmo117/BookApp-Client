@@ -1,0 +1,44 @@
+.bgUserHome{
+    background-color: #2A272A;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.logoUserHome{
+   width: 100%;
+height: auto;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+.contMenuUserHome{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.AreaUserHome{
+    width: 100%;
+    min-height: 67vh;
+    display: flex;
+    
+    align-items: start;
+    background-color: rgb(23, 23, 23);
+    padding: 15px 70px ;
+}
+
+.prbComponent{
+    width: 100%;
+    height: 400px;
+    background-color: #000000a7;
+    border-radius: 10px;
+}
+
+
+
+

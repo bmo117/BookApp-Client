@@ -1,0 +1,39 @@
+
+.buContainerG{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a272a;
+}
+
+.buContainer {
+    display: flex;
+    width: 700px;
+    height: 500px;
+    -webkit-box-shadow: 3px 3px 85px -3px rgba(0,0,0,0.35);
+    -moz-box-shadow: 3px 3px 85px -3px rgba(0,0,0,0.35);
+    box-shadow: 3px 3px 85px -3px rgba(0,0,0,0.35);
+    border-radius: 20px;
+}
+
+.imageBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    background: rgba(255, 255, 255, .3);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1.5px solid rgba(209, 213, 219, 0.3);
+}
+
+.cont-buttons{
+    margin-top: 10px;
+    position: relative;
+}

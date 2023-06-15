@@ -1,0 +1,36 @@
+
+
+.ContUserName{
+    width: 200px;
+    height: 50px;
+    position: relative;
+    left: -12rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1.5px solid rgba(227, 231, 237, 0.1);
+}
+
+.ContUserName> p{
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btnLogOut{
+    border: none;
+    padding: 4px 10px;
+    background-color: rgb(51, 215, 193);
+    border-radius: 3px;
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.btnLogOut:hover{
+    background-color: aqua;
+}

@@ -1,0 +1,62 @@
+.menuWTR{
+    width: 97px;
+    height: 42px;
+    background-color: aquamarine;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 3px;
+}
+
+.selectBookStatus{
+    background-color:  aquamarine;
+    color: black;
+    cursor: pointer;
+}
+
+.contBTNBookStatus{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hideMenuWTR{
+    display: none;
+}
+
+.btnBookStatus{
+    border: none;
+    padding: 3px 0;
+    background: none;
+    cursor: pointer;
+}
+
+.btnStatusReading{
+    border: none;
+    padding: 3px 5px;
+    background-color: rgb(51, 215, 193);
+    border-radius: 3PX;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btnStatusReading2{
+    display: flex;
+}
+
+.btnReadingStatus{
+    color: black;
+    margin-left: 3px;
+}
+
+.statusRed{
+    background-color: gray;
+}
+
+.statusReading{
+    background-color: yellow;
+}
+
+.statusWTR{
+    background-color: purple;
+}

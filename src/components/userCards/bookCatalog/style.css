@@ -1,0 +1,132 @@
+.contBookCatalog{
+    width: 100%;
+    height: auto;
+    row-gap: 15px;
+    display: grid;
+    grid-template-columns:repeat(auto-fill, minmax(200px,1fr));
+    grid-template-rows: auto; 
+    justify-items: center;
+
+}
+
+.bookCatalogCard{
+    width: 200px;
+    height: 350px;
+   padding-top: 3px;
+   border-radius: 7px;
+
+  
+background: rgba(65, 65, 65, 0.317);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+}
+
+.BCCardPart1{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.BCCardFavorite{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 25px;
+    height: 25px; */
+    /* background-color: rgb(0, 0, 0); */
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    cursor: pointer;
+}
+.BCCFavorite{
+    color: white;
+}
+.contImageBCCard{
+    width: 90%;
+    height: 100%;
+}
+
+.imgBCCard{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: 0px;
+}
+
+
+
+.BCCardPart2{
+    width: 100%;
+    height: 40%;
+    /* background-color: rgb(106, 81, 50); */
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.BCCardField{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.BCCFormat{
+    color: white;
+    margin-right: 5px;
+    font-size: 13px;
+}
+
+.BCCardButtons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.btnADD{
+    width: 25PX;
+    height: 25PX;
+    background-color: rgb(51, 215, 193);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3PX;
+    cursor: pointer;
+}
+
+.btnADD2{
+    color: black;
+}
+
+.btnWTR{
+    background-color: rgb(51, 215, 193);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px ;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+.isInMyFavorites{
+    color:  red;
+}
+/* .menuWTR{
+    width: 100px;
+    height: 70px;
+    background-color: aquamarine;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.hideMenuWTR{
+    display: none;
+} */
