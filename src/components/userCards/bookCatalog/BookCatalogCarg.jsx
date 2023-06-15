@@ -20,7 +20,7 @@ function bookCatalogCard() {
   const [wtr, setWtr] = useState([]);
   const [updateReadBook, setUpdateReadBook] = useState(false);
   useEffect(() => {
-    axios.get("http://localhost:3001/api/admin/books/0").then((res) => {
+    axios.get("http://localhost:3001/api/admin/books/").then((res) => {
       setBookCatalog(res.data);
     });
     getFavorites();
