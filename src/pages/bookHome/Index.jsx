@@ -16,11 +16,11 @@ function Index() {
 
   const [BookHomePage, setBookHomePage] = useState([]);
   useEffect(() => {
-    axios
-      .get("https://bookapp-api-production.up.railway.app/api/admin/books/0")
-      .then((res) => {
-        setBookHomePage(res.data);
-      });
+    // axios
+    //   .get("https://bookapp-api-production.up.railway.app/api/admin/books/0")
+    //   .then((res) => {
+    //     setBookHomePage(res.data);
+    //   });
   }, []);
 
   const formik = useFormik({
@@ -77,7 +77,7 @@ function Index() {
   const navigate = useNavigate();
   return (
     <div className="contbgHomePage">
-      {console.log("data home books ", BookHomePage)}
+      {/* {console.log("data home books ", BookHomePage)} */}
       <div className="contComponent">
         <div className="compLogo">
           <img src={moon} alt="" />
