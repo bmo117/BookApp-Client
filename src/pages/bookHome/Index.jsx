@@ -77,6 +77,7 @@ function Index() {
   const navigate = useNavigate();
   return (
     <div className="contbgHomePage">
+      {console.log("data home books ", BookHomePage)}
       <div className="contComponent">
         <div className="compLogo">
           <img src={moon} alt="" />

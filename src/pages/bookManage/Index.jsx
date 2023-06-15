@@ -45,6 +45,7 @@ function Index() {
   return (
     <div className="manageContainer">
       {console.log(bookData, "data====")}
+      {console.log("data manages books ", bookData)}
       {console.log(bookContext, "datos en en book context")}
       <div className="header-cont">
         <div>
