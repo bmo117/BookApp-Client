@@ -17,7 +17,7 @@ function Index() {
   const [BookHomePage, setBookHomePage] = useState([]);
   useEffect(() => {
     axios
-      .get("https://bookapp-api-production.up.railway.app/api/admin/books/10")
+      .get("https://bookapp-api-production.up.railway.app/api/admin/books/5")
       .then((res) => {
         setBookHomePage(res.data);
       });
